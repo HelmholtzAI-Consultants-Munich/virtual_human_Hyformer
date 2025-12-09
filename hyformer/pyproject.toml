@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyformer"
+version = "0.1.0"
+authors = [
+  { name = "Maksim Pavlov", email = "maksim.pavlov@helmholtz-munich.de" }
+]
+description = "Hyformer"
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "numpy>=1.26,<2.0",
+    "pandas==1.5.3",
+    "scipy==1.10.1",
+    "tqdm",
+    "transformers",
+    "wandb",
+    "deepchem==2.8.0",
+    "guacamol",
+    "fcd==1.2",
+    "pillow<10"
+]
+
+[project.urls]
+Homepage = "https://github.com/szczurek-lab/hyformer/tree/main"
+
