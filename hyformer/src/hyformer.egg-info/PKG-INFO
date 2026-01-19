@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: hyformer
+Version: 0.1.0
+Summary: Hyformer
+Author-email: Maksim Pavlov <maksim.pavlov@helmholtz-munich.de>
+Project-URL: Homepage, https://github.com/szczurek-lab/hyformer/tree/main
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy<2.0,>=1.26
+Requires-Dist: pandas>=1.5.3
+Requires-Dist: scipy>=1.10.1
+Requires-Dist: tqdm
+Requires-Dist: transformers
+Requires-Dist: wandb
+Requires-Dist: deepchem==2.8.0
+Requires-Dist: guacamol
+Requires-Dist: fcd==1.2
+Requires-Dist: pillow<10
+
+Hyformer package with essential dependecies
