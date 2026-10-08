@@ -7,8 +7,8 @@ import torch.nn.functional as F
 
 from typing import Optional, Tuple
 
-from hyformer.models.layers.rotary import RotaryEmbedding
-from hyformer.models.layers.cache import KVCache
+from hyformer_v2.models.layers.rotary import RotaryEmbedding
+from hyformer_v2.models.layers.cache import KVCache
 
 class Attention(nn.Module):
     """Multi-head attention layer with rotary positional embeddings.

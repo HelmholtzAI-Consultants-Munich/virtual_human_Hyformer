@@ -9,7 +9,7 @@ and a custom vocabulary file.
 
 import os
 import torch
-from hyformer.tokenizers import LlamaSMILESTokenizer, TASK_TOKEN_DICT
+from hyformer_v2.tokenizers import LlamaSMILESTokenizer, TASK_TOKEN_DICT
 
 def main():
     # Example SMILES strings

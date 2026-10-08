@@ -10,10 +10,10 @@ from sklearn.metrics import (
     mean_absolute_error
 )
 from scipy.stats import spearmanr
-from hyformer.metrics.base import Metric
-from hyformer.metrics.predictive.regression import RMSE
-from hyformer.metrics.predictive.classification import ROCAUC, PRCAUC
-from hyformer.metrics.generative.language import Perplexity
+from hyformer_v2.metrics.base import Metric
+from hyformer_v2.metrics.predictive.regression import RMSE
+from hyformer_v2.metrics.predictive.classification import ROCAUC, PRCAUC
+from hyformer_v2.metrics.generative.language import Perplexity
 
 # Registry of available metrics
 METRIC_REGISTRY: Dict[str, Type[Metric]] = {

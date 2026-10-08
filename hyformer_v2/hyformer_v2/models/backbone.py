@@ -12,11 +12,11 @@ import torch.nn as nn
 
 from typing import Optional
 
-from hyformer.models.layers.layer_norm import RMSNorm
-from hyformer.models.layers.transformer_layer import TransformerLayer
-from hyformer.configs.model import ModelConfig
-from hyformer.models.base import TrainableModel
-from hyformer.models.utils.containers import ModelOutput
+from hyformer_v2.models.layers.layer_norm import RMSNorm
+from hyformer_v2.models.layers.transformer_layer import TransformerLayer
+from hyformer_v2.configs.model import ModelConfig
+from hyformer_v2.models.base import TrainableModel
+from hyformer_v2.models.utils.containers import ModelOutput
 
 
 class LLAMABackbone(TrainableModel):

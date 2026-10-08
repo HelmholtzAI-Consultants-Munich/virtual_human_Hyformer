@@ -2,7 +2,7 @@ import torch
 from typing import Optional, Union
 from torch.nn import functional as F
 
-from hyformer.utils.metrics.base import BaseMetric
+from hyformer_v2.utils.metrics.base import BaseMetric
 
 
 class Perplexity(BaseMetric):

@@ -4,11 +4,11 @@ import torch.nn.functional as F
 
 from typing import Optional
 
-from hyformer.models.backbone import LLAMABackbone
-from hyformer.models.utils import ModelOutput
-from hyformer.tokenizers.base import IGNORE_TOKEN_IDX
-from hyformer.models.layers.prediction import PredictionHead
-from hyformer.configs.model import ModelConfig
+from hyformer_v2.models.backbone import LLAMABackbone
+from hyformer_v2.models.utils import ModelOutput
+from hyformer_v2.tokenizers.base import IGNORE_TOKEN_IDX
+from hyformer_v2.models.layers.prediction import PredictionHead
+from hyformer_v2.configs.model import ModelConfig
 
 NAN_TARGET_IDX = -1
 
@@ -463,14 +463,14 @@ class Hyformer(LLAMABackbone):
         )
     
     def to_generator(self, tokenizer, batch_size, device) -> 'HyformerGeneratorWrapper':
-        from hyformer.models.wrappers import HyformerGeneratorWrapper
+        from hyformer_v2.models.wrappers import HyformerGeneratorWrapper
         return HyformerGeneratorWrapper(model=self, tokenizer=tokenizer, batch_size=batch_size, device=device)
 
     def to_encoder(self, tokenizer, batch_size, device) -> 'HyformerEncoderWrapper':
-        from hyformer.models.wrappers import HyformerEncoderWrapper
+        from hyformer_v2.models.wrappers import HyformerEncoderWrapper
         return HyformerEncoderWrapper(model=self, tokenizer=tokenizer, batch_size=batch_size, device=device)
 
     def to_predictor(self, tokenizer, batch_size, device) -> 'HyformerPredictorWrapper':
         assert self.prediction_head is not None, "Model must have a prediction head initialized to be converted to a predictor."
-        from hyformer.models.wrappers import HyformerPredictorWrapper
+        from hyformer_v2.models.wrappers import HyformerPredictorWrapper
         return HyformerPredictorWrapper(model=self, tokenizer=tokenizer, batch_size=batch_size, device=device)

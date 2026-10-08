@@ -3,7 +3,7 @@ import numpy as np
 from guacamol import standard_benchmarks
 from typing import Optional
 
-from hyformer.utils.targets.base import BaseTarget
+from hyformer_v2.utils.targets.base import BaseTarget
 
 GUACAMOL_MPO_DEFAULT_DTYPE = np.float64
 

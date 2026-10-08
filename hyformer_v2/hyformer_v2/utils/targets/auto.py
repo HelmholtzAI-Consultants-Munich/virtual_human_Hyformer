@@ -2,7 +2,7 @@ import importlib
 
 from typing import Union, Optional
 
-from hyformer.utils.targets.base import BaseTarget
+from hyformer_v2.utils.targets.base import BaseTarget
 
 
 class AutoTarget:
@@ -13,23 +13,23 @@ class AutoTarget:
 
         if target_name == 'qed':
             return getattr(importlib.import_module(
-                "hyformer.utils.targets.smiles.qed"),
+                "hyformer_v2.utils.targets.smiles.qed"),
                 "QED")(**kwargs)
         elif target_name == 'physchem':
             return getattr(importlib.import_module(
-                "hyformer.utils.targets.physchem"),
+                "hyformer_v2.utils.targets.physchem"),
                 "PhysChem")(**kwargs)
         elif target_name == 'sa_score':
             return getattr(importlib.import_module(
-                "hyformer.utils.targets.smiles.physchem"),
+                "hyformer_v2.utils.targets.smiles.physchem"),
                 "PhysChem")(**kwargs) 
         elif target_name == 'logp':
             return getattr(importlib.import_module(
-                "hyformer.utils.targets.smiles.plogp"),
+                "hyformer_v2.utils.targets.smiles.plogp"),
                 "PlogP")(**kwargs)
         elif target_name == 'guacamol_mpo':
             return getattr(importlib.import_module(
-                "hyformer.utils.targets.smiles.guacamol_mpo"),
+                "hyformer_v2.utils.targets.smiles.guacamol_mpo"),
                 "GuacamolMPO")(**kwargs)
         else:
             raise ValueError(f"Target {target_name} not available.")

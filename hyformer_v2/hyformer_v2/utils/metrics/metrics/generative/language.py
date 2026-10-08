@@ -1,7 +1,7 @@
 from typing import Union
 import torch
 import numpy as np
-from hyformer.metrics.base import Metric
+from hyformer_v2.metrics.base import Metric
 
 class Perplexity(Metric):
     """Perplexity metric for language modeling."""

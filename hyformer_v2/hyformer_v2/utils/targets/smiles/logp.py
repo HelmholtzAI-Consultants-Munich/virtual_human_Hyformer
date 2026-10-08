@@ -1,8 +1,8 @@
 import networkx as nx
 import numpy as np
 
-from hyformer.utils.targets.smiles import sascorer
-from hyformer.utils.targets.base import BaseTarget
+from hyformer_v2.utils.targets.smiles import sascorer
+from hyformer_v2.utils.targets.base import BaseTarget
 
 logP_mean = 2.4570953396190123
 logP_std = 1.434324401111988

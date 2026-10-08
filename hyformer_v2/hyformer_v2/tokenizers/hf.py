@@ -20,7 +20,7 @@ try:
 except ImportError as e:
     raise ImportError(f"Required packages are not installed: {e}")
 
-from hyformer.tokenizers.base import BaseTokenizer, TASK_TOKEN_DICT
+from hyformer_v2.tokenizers.base import BaseTokenizer, TASK_TOKEN_DICT
 
 
 class HFTokenizer(BaseTokenizer):

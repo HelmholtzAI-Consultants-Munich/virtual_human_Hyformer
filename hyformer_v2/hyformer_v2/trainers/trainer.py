@@ -9,16 +9,16 @@ from contextlib import nullcontext
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 
-from hyformer.configs.trainer import TrainerConfig
-from hyformer.models.base import TrainableModel
-from hyformer.utils.loggers.wandb import WandbLogger
-from hyformer.utils.data.datasets.base import BaseDataset
+from hyformer_v2.configs.trainer import TrainerConfig
+from hyformer_v2.models.base import TrainableModel
+from hyformer_v2.utils.loggers.wandb import WandbLogger
+from hyformer_v2.utils.data.datasets.base import BaseDataset
 
-from hyformer.tokenizers.base import BaseTokenizer
-from hyformer.utils.collators.data_collator_task_tokens import DataCollatorWithTaskTokens
+from hyformer_v2.tokenizers.base import BaseTokenizer
+from hyformer_v2.utils.collators.data_collator_task_tokens import DataCollatorWithTaskTokens
 
-from hyformer.utils.metrics import calculate_metric
-from hyformer.utils.reproducibility import seed_worker
+from hyformer_v2.utils.metrics import calculate_metric
+from hyformer_v2.utils.reproducibility import seed_worker
 
 import torch._dynamo
 torch._dynamo.config.cache_size_limit = 64

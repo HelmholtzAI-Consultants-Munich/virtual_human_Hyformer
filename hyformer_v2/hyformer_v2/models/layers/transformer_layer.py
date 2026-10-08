@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 
-from hyformer.models.layers.layer_norm import RMSNorm
-from hyformer.models.layers.attention import Attention
-from hyformer.models.layers.feed_forward import FeedForward
+from hyformer_v2.models.layers.layer_norm import RMSNorm
+from hyformer_v2.models.layers.attention import Attention
+from hyformer_v2.models.layers.feed_forward import FeedForward
 
 
 class TransformerLayer(nn.Module):

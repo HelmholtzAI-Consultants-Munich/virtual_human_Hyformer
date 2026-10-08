@@ -1,7 +1,7 @@
 import numpy as np
 
-from hyformer.utils.metrics.generative import calculate_perplexity
-from hyformer.utils.metrics.predictive import (
+from hyformer_v2.utils.metrics.generative import calculate_perplexity
+from hyformer_v2.utils.metrics.predictive import (
     calculate_rmse,
     calculate_roc_auc,
     calculate_prc_auc,

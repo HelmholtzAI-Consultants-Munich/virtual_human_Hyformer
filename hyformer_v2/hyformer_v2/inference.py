@@ -26,8 +26,8 @@ _CHECKPOINT_MIC = Literal["SzczurekLab/hyformer_peptides_34M_MIC"]
 import numpy as np
 import torch
 
-from hyformer.models.auto import AutoModel
-from hyformer.tokenizers.auto import AutoTokenizer
+from hyformer_v2.models.auto import AutoModel
+from hyformer_v2.tokenizers.auto import AutoTokenizer
 
 
 def embed(
@@ -71,7 +71,7 @@ def compute_perplexity(
 ) -> np.ndarray:
     """Return perplexity for each sequence, shape (len(sequences),)."""
     model, tokenizer, device = _load(checkpoint, device=device)
-    from hyformer.utils.data.utils import create_dataloader
+    from hyformer_v2.utils.data.utils import create_dataloader
     loader = create_dataloader(
         dataset=sequences,
         tasks={"lm": 1.0},

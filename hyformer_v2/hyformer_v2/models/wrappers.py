@@ -3,10 +3,10 @@ import numpy as np
 from tqdm import tqdm
 from typing import List, Any, Optional
 
-from hyformer.utils.data.datasets.base import BaseDataset
-from hyformer.tokenizers.base import BaseTokenizer
-from hyformer.utils.data.utils import create_dataloader
-from hyformer.models.utils.containers import ModelInput, ModelOutput
+from hyformer_v2.utils.data.datasets.base import BaseDataset
+from hyformer_v2.tokenizers.base import BaseTokenizer
+from hyformer_v2.utils.data.utils import create_dataloader
+from hyformer_v2.models.utils.containers import ModelInput, ModelOutput
 
 ###
 # Featurization

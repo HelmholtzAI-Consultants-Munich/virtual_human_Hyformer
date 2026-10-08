@@ -3,7 +3,7 @@ import numpy as np
 import os
 from typing import Any, Optional, List, Union, Dict
 
-from hyformer.utils.data.datasets.storage.base import DataStorage
+from hyformer_v2.utils.data.datasets.storage.base import DataStorage
 
 
 class CSVStorage(DataStorage):
@@ -23,7 +23,7 @@ class CSVStorage(DataStorage):
     Examples
     --------
     >>> import pandas as pd
-    >>> from hyformer.utils.data.datasets.storage.csv_storage import CSVStorage
+    >>> from hyformer_v2.utils.data.datasets.storage.csv_storage import CSVStorage
     >>>
     >>> # Create a storage instance from a DataFrame
     >>> df = pd.DataFrame({

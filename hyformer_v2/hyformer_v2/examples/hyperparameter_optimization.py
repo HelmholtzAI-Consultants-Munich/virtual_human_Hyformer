@@ -9,11 +9,11 @@ import json
 import itertools
 from typing import Dict, List, Any
 
-from hyformer.configs.base import BaseConfig
-from hyformer.configs.model import ModelConfig
-from hyformer.configs.trainer import TrainerConfig
-from hyformer.configs.tokenizer import TokenizerConfig
-from hyformer.configs.dataset import DatasetConfig
+from hyformer_v2.configs.base import BaseConfig
+from hyformer_v2.configs.model import ModelConfig
+from hyformer_v2.configs.trainer import TrainerConfig
+from hyformer_v2.configs.tokenizer import TokenizerConfig
+from hyformer_v2.configs.dataset import DatasetConfig
 
 
 def load_base_configs() -> Dict[str, BaseConfig]:

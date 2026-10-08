@@ -18,7 +18,7 @@ CSVStorage
 
 Examples
 --------
->>> from hyformer.utils.data.datasets.storage.auto import AutoStorage
+>>> from hyformer_v2.utils.data.datasets.storage.auto import AutoStorage
 >>>
 >>> # Load data from a file based on its extension
 >>> storage = AutoStorage.from_path('data/molecules.npz')

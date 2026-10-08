@@ -1,7 +1,7 @@
 import numpy as np
 from typing import Any, Optional, List, Union, Dict, TypeVar
 
-from hyformer.utils.data.datasets.storage.base import DataStorage
+from hyformer_v2.utils.data.datasets.storage.base import DataStorage
 
 # Type alias for NumPy npz file type
 NpzFile = TypeVar("NpzFile", bound="np.lib.npyio.NpzFile")

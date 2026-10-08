@@ -3,8 +3,8 @@ import os
 import warnings
 from typing import Dict, Any, Optional
 
-from hyformer.configs.tokenizer import TokenizerConfig
-from hyformer.tokenizers.base import BaseTokenizer, TOKENIZER_CONFIG_FILENAME
+from hyformer_v2.configs.tokenizer import TokenizerConfig
+from hyformer_v2.tokenizers.base import BaseTokenizer, TOKENIZER_CONFIG_FILENAME
 
 try:
     from huggingface_hub import hf_hub_download
@@ -47,13 +47,13 @@ class AutoTokenizer:
         """
         # Simple if-else factory pattern
         if config.tokenizer_type == 'SMILESTokenizer':
-            from hyformer.tokenizers.smiles import SMILESTokenizer
+            from hyformer_v2.tokenizers.smiles import SMILESTokenizer
             return SMILESTokenizer.from_config(config)
         elif config.tokenizer_type == "AATokenizer":
-            from hyformer.tokenizers.amino_acid import AATokenizer
+            from hyformer_v2.tokenizers.amino_acid import AATokenizer
             return AATokenizer.from_config(config)
         elif config.tokenizer_type == "HFTokenizer":
-            from hyformer.tokenizers.hf import HFTokenizer
+            from hyformer_v2.tokenizers.hf import HFTokenizer
             return HFTokenizer.from_config(config)
         else:
             raise ValueError(f"Tokenizer type '{config.tokenizer_type}' is not supported. "
@@ -170,17 +170,17 @@ class AutoTokenizer:
 
         # Load the appropriate tokenizer class and call its from_pretrained method
         if tokenizer_type == 'SMILESTokenizer':
-            from hyformer.tokenizers.smiles import SMILESTokenizer
+            from hyformer_v2.tokenizers.smiles import SMILESTokenizer
             return SMILESTokenizer.from_pretrained(
                 repo_id_or_path, revision, tokenizer_config, local_dir, local_dir_use_symlinks, subfolder=subfolder, repo_type=repo_type, **kwargs
             )
         elif tokenizer_type == "AATokenizer":
-            from hyformer.tokenizers.amino_acid import AATokenizer
+            from hyformer_v2.tokenizers.amino_acid import AATokenizer
             return AATokenizer.from_pretrained(
                 repo_id_or_path, revision, tokenizer_config, local_dir, local_dir_use_symlinks, subfolder=subfolder, repo_type=repo_type, **kwargs
             )
         elif tokenizer_type == "HFTokenizer":
-            from hyformer.tokenizers.hf import HFTokenizer
+            from hyformer_v2.tokenizers.hf import HFTokenizer
             return HFTokenizer.from_pretrained(
                 repo_id_or_path, revision, tokenizer_config, local_dir, local_dir_use_symlinks, subfolder=subfolder, repo_type=repo_type, **kwargs
             )

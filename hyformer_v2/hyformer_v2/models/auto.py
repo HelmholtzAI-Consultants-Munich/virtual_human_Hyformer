@@ -3,8 +3,8 @@
 import os
 from typing import Optional, Type
 
-from hyformer.configs.model import ModelConfig
-from hyformer.models.base import PreTrainedModel
+from hyformer_v2.configs.model import ModelConfig
+from hyformer_v2.models.base import PreTrainedModel
 
 try:
     from huggingface_hub import hf_hub_download
@@ -16,7 +16,7 @@ def _load_model_class(model_type: str) -> Type[PreTrainedModel]:
     """Return the concrete model class for the requested ``model_type``."""
 
     if model_type == "Hyformer":
-        from hyformer.models.hyformer import Hyformer
+        from hyformer_v2.models.hyformer import Hyformer
         return Hyformer
     else:
         raise ValueError(f"Unknown model_type: {model_type}")
@@ -48,7 +48,7 @@ class AutoModel:
     ) -> PreTrainedModel:
         """Instantiate a model and load weights from the specified source."""
         if model_config is None:
-            from hyformer.models.base import _MODEL_CONFIG_FILENAME
+            from hyformer_v2.models.base import _MODEL_CONFIG_FILENAME
 
             config_dir: Optional[str] = None
             if os.path.isdir(pretrained_model_name_or_path):

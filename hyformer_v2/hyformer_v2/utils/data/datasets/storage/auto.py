@@ -1,9 +1,9 @@
 import os
 from typing import Dict, Any
 
-from hyformer.utils.data.datasets.storage.base import DataStorage
-from hyformer.utils.data.datasets.storage.npz import NPZStorage
-from hyformer.utils.data.datasets.storage.csv import CSVStorage
+from hyformer_v2.utils.data.datasets.storage.base import DataStorage
+from hyformer_v2.utils.data.datasets.storage.npz import NPZStorage
+from hyformer_v2.utils.data.datasets.storage.csv import CSVStorage
 
 # Default settings
 _ALLOW_PICKLE = False  # Security setting - controls whether pickled objects are allowed in NPZ files

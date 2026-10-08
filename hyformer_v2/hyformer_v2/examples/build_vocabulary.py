@@ -8,11 +8,11 @@ It can be used to create a new vocabulary file or update an existing one.
 
 import os
 import argparse
-from hyformer.configs.dataset import DatasetConfig
-from hyformer.configs.tokenizer import TokenizerConfig
-from hyformer.tokenizers.auto import AutoTokenizer
-from hyformer.tokenizers.utils import build_vocabulary_from_dataset
-from hyformer.tokenizers.smiles import SMILES_REGEX_PATTERN
+from hyformer_v2.configs.dataset import DatasetConfig
+from hyformer_v2.configs.tokenizer import TokenizerConfig
+from hyformer_v2.tokenizers.auto import AutoTokenizer
+from hyformer_v2.tokenizers.utils import build_vocabulary_from_dataset
+from hyformer_v2.tokenizers.smiles import SMILES_REGEX_PATTERN
 
 
 def main():

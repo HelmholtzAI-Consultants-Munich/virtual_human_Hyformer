@@ -2,7 +2,7 @@ import math
 import logging
 from typing import Dict, Optional
 from dataclasses import dataclass, field
-from hyformer.configs.base import BaseConfig
+from hyformer_v2.configs.base import BaseConfig
 
 console = logging.getLogger(__file__)
 

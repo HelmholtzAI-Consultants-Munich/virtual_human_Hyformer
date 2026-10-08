@@ -11,9 +11,9 @@ from typing import Dict, Optional, List, Union, Any, Tuple
 
 from torch.utils.data import DataLoader
 
-from hyformer.utils.data.datasets.base import BaseDataset
-from hyformer.tokenizers.base import BaseTokenizer
-from hyformer.utils.reproducibility import seed_worker, get_global_seed
+from hyformer_v2.utils.data.datasets.base import BaseDataset
+from hyformer_v2.tokenizers.base import BaseTokenizer
+from hyformer_v2.utils.reproducibility import seed_worker, get_global_seed
 
 
 SUPPORTED_TASKS = ["lm", "prediction", "mlm"]
@@ -165,7 +165,7 @@ def create_dataloader(
 
                     target = torch.from_numpy(_np.stack(targets)).float()
 
-        from hyformer.models.utils import ModelInput  # local import to avoid circulars
+        from hyformer_v2.models.utils import ModelInput  # local import to avoid circulars
 
         return ModelInput(
             input_ids=model_input_ids,

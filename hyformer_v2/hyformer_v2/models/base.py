@@ -18,9 +18,9 @@ from abc import ABC, abstractmethod
 from typing import Optional, Dict, Any
 from requests.exceptions import HTTPError
 
-from hyformer.configs.model import ModelConfig
-from hyformer.models.utils import ModelOutput
-from hyformer.models.utils import (
+from hyformer_v2.configs.model import ModelConfig
+from hyformer_v2.models.utils import ModelOutput
+from hyformer_v2.models.utils import (
     _adapt_state_dict_for_compiled_model,
     _remove_compile_artifacts_from_state_dict,
 )

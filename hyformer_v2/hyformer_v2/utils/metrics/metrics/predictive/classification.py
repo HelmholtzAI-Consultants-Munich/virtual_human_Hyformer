@@ -2,7 +2,7 @@ from typing import Union
 import torch
 import numpy as np
 from sklearn.metrics import roc_auc_score, average_precision_score
-from hyformer.metrics.base import Metric
+from hyformer_v2.metrics.base import Metric
 
 class ROCAUC(Metric):
     """Area Under ROC Curve metric."""

@@ -15,8 +15,8 @@ SequenceDataset
 
 Examples
 --------
->>> from hyformer.utils.data.datasets import AutoDataset
->>> from hyformer.configs.dataset import DatasetConfig
+>>> from hyformer_v2.utils.data.datasets import AutoDataset
+>>> from hyformer_v2.configs.dataset import DatasetConfig
 >>> 
 >>> # Create a dataset from configuration
 >>> config = DatasetConfig(

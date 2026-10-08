@@ -7,8 +7,8 @@ import torch.nn as nn
 
 from typing import Optional, List
 
-from hyformer.configs.base import BaseConfig
-from hyformer.configs.logger import LoggerConfig
+from hyformer_v2.configs.base import BaseConfig
+from hyformer_v2.configs.logger import LoggerConfig
 
 
 

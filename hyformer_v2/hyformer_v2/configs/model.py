@@ -1,8 +1,8 @@
 from typing import Optional, Dict, Any
 from dataclasses import dataclass, field
 
-from hyformer.configs.base import BaseConfig
-from hyformer.utils.experiments import find_multiple
+from hyformer_v2.configs.base import BaseConfig
+from hyformer_v2.utils.experiments import find_multiple
 
 EMBEDDING_DIM_HIDDEN_FACTOR = 4
 EMBEDDING_DIM_MULTIPLE_OF = 256

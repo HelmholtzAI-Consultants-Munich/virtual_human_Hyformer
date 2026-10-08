@@ -1,8 +1,8 @@
 import re
 from typing import Dict, List, Optional
 
-from hyformer.configs.tokenizer import TokenizerConfig
-from hyformer.tokenizers.base import BaseTokenizer, TOKEN_DICT, TASK_TOKEN_DICT
+from hyformer_v2.configs.tokenizer import TokenizerConfig
+from hyformer_v2.tokenizers.base import BaseTokenizer, TOKEN_DICT, TASK_TOKEN_DICT
 
 
 # SMILES regex pattern for tokenization

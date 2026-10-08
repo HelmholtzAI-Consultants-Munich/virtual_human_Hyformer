@@ -1,6 +1,6 @@
 import numpy as np
 
-from hyformer.utils.targets.base import BaseTarget
+from hyformer_v2.utils.targets.base import BaseTarget
 
 
 class QED(BaseTarget):

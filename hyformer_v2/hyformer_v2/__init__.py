@@ -1,10 +1,10 @@
 """Hyformer package public API."""
 
-from hyformer.models.auto import AutoModel
-from hyformer.models.hyformer import Hyformer
-from hyformer.models.wrappers import HyformerEncoderWrapper
-from hyformer.tokenizers.auto import AutoTokenizer
-from hyformer.inference import embed, predict, compute_perplexity
+from hyformer_v2.models.auto import AutoModel
+from hyformer_v2.models.hyformer import Hyformer
+from hyformer_v2.models.wrappers import HyformerEncoderWrapper
+from hyformer_v2.tokenizers.auto import AutoTokenizer
+from hyformer_v2.inference import embed, predict, compute_perplexity
 
 __version__ = "2.0.0"
 

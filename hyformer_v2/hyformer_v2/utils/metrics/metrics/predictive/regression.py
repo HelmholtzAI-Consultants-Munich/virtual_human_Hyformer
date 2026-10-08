@@ -2,7 +2,7 @@ from typing import Union
 import torch
 import numpy as np
 from sklearn.metrics import mean_squared_error
-from hyformer.metrics.base import Metric
+from hyformer_v2.metrics.base import Metric
 
 class RMSE(Metric):
     """Root Mean Square Error metric."""

@@ -1,7 +1,7 @@
 import numpy as np
 
-from hyformer.utils.targets.base import BaseTarget
-from hyformer.utils.targets.molbert.featurizer import PhysChemFeaturizer
+from hyformer_v2.utils.targets.base import BaseTarget
+from hyformer_v2.utils.targets.molbert.featurizer import PhysChemFeaturizer
 _NORMALIZE = True
 
 

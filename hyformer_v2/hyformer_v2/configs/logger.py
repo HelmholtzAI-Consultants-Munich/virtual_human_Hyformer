@@ -1,6 +1,6 @@
 from typing import Optional, List, Dict, Any
 from dataclasses import dataclass
-from hyformer.configs.base import BaseConfig
+from hyformer_v2.configs.base import BaseConfig
 
 
 @dataclass

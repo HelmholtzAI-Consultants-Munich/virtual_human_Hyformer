@@ -1,11 +1,11 @@
 import os
 from typing import Dict, Any
 
-from hyformer.configs.dataset import DatasetConfig
-from hyformer.utils.data.datasets.base import BaseDataset
+from hyformer_v2.configs.dataset import DatasetConfig
+from hyformer_v2.utils.data.datasets.base import BaseDataset
 
 # Import the dataset implementations directly
-from hyformer.utils.data.datasets.sequence import SequenceDataset
+from hyformer_v2.utils.data.datasets.sequence import SequenceDataset
 
 class AutoDataset:
     """Factory class for automatic dataset selection based on dataset type.
